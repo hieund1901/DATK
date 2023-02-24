@@ -1,0 +1,198 @@
+POST http://202.191.57.61:5656/api/users
+Content-Type: application/json
+
+{
+  "name": "Johan",
+  "email": "johan@gmail.com2",
+  "password": "123456",
+  "avatar_path": "assets/imgs/1.png"
+}
+###
+
+POST http://202.191.57.61:5656/auth/signin
+Content-Type: application/json
+
+{
+  "email": "johan@gmail.com2",
+  "password": "123456"
+}
+
+###
+
+POST http://202.191.57.61:5656/auth/refresh_token
+Content-Type: application/json
+
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NTAyNTIyNjAsImV4cCI6MTY1MDg1NzA2MH0.9rwmV3XZTY5IOgEzqqTtGicECJgrWWaicQHG__HpT9Y"
+}
+
+###
+
+PUT http://202.191.57.61:5656/api/users/623ae490e6d89aaa982ad52c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NTAzMDM4OTgsImV4cCI6MTY1MDMwNzQ5OH0.hNCeLJrUJfVHOg1-pr13cK8yO7p9IDrg0EpmZiGBF5A
+
+{
+  "birth": "1999-10-13T09:12:48.847Z",
+  "gender": 1
+}
+
+###
+
+GET http://202.191.57.61:5656/api/users/623ae490e6d89aaa982ad52c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NTAzMDM4OTgsImV4cCI6MTY1MDMwNzQ5OH0.hNCeLJrUJfVHOg1-pr13cK8yO7p9IDrg0EpmZiGBF5A
+
+###
+POST http://202.191.57.61:5656/api/weights/623ae490e6d89aaa982ad52c
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NTE4ODU0MzgsImV4cCI6MTY1MTg4OTAzOH0.rcZzzlxcYo1N3rZ7Ze0J7L5XcfCOJXlBl7fFqNSa9Rc
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="value"
+
+57.8
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="weight.jpg"
+Content-Type: image/jpg
+
+< ../weight.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+GET http://202.191.57.61:5656/api/weights/623ae490e6d89aaa982ad52c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NTE4ODc4ODIsImV4cCI6MTY1MTg5MTQ4Mn0.KF6gFEEaN2tvj2Xj6_qBdT8J3duKUA8sJYHdlYtzjeE
+
+###
+
+POST http://202.191.57.61:5656/api/temperature/623ae490e6d89aaa982ad52c
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NDgwMjY4MTZ9.YlJs2s8uHSRQvSxMDV-DDjSU6EGuqpXJ-ar1BB2BsPQ
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="value"
+
+30.5
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="temperature.jpg"
+Content-Type: image/jpg
+
+< ../nhietdo.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+GET http://202.191.57.61:5656/api/temperature/623ae490e6d89aaa982ad52c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NTIwMTc0MzYsImV4cCI6MTY1MjAyMTAzNn0.InOXH8VW08XKH5m0b_lNcttfej-1tU0g_BnSvuM1hBLI0xjD1QPpynswCG-tHb7wbBRYVIuN7n7CGybLdixZyw
+
+###
+
+POST http://202.191.57.61:5656/api/blood/623ae490e6d89aaa982ad52c
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NDgwMjY4MTZ9.YlJs2s8uHSRQvSxMDV-DDjSU6EGuqpXJ-ar1BB2BsPQ
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="value"
+
+99
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="blood.jpg"
+Content-Type: image/jpg
+
+< ../blood.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+GET http://202.191.57.61:5656/api/blood/623ae490e6d89aaa982ad52c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NTAyNTIyNzIsImV4cCI6MTY1MDI1NTg3Mn0.tly8uZDvg8x56jxZ_uhhIscUPp7iX7-sOmhWqVdDqHo
+
+###
+
+POST http://202.191.57.61:5656/api/oxy/623ae490e6d89aaa982ad52c
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NDgwMjY4MTZ9.YlJs2s8uHSRQvSxMDV-DDjSU6EGuqpXJ-ar1BB2BsPQ
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="value"
+
+101
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="oxy.jpg"
+Content-Type: image/jpg
+
+< ../oxy.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+GET http://202.191.57.61:5656/api/oxy/623ae490e6d89aaa982ad52c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NTAyNTIyNzIsImV4cCI6MTY1MDI1NTg3Mn0.tly8uZDvg8x56jxZ_uhhIscUPp7iX7-sOmhWqVdDqHo
+
+###
+
+POST http://202.191.57.61:5656/api/ecg
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NDgwMjY4MTZ9.YlJs2s8uHSRQvSxMDV-DDjSU6EGuqpXJ-ar1BB2BsPQ
+
+
+###
+
+GET http://202.191.57.61:5656/api/ecg
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjdlZmUzZGM3MjYwNDlhNDJkMTAzMjgiLCJpYXQiOjE2NTI1MDg3OTUsImV4cCI6MTY1MjUxMjM5NX0.eV_EOxDQrv4QzOAPQrMVZH8E2N242zGs-iWc6D3iotbhQ3i7huVKgaSD6cjWESp-T62nLGbw0fNTM_VByBgldg
+
+###
+
+POST http://202.191.57.61:5656/api/prescription/623ae490e6d89aaa982ad52c
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MjdlZmUzZGM3MjYwNDlhNDJkMTAzMjgiLCJpYXQiOjE2NTI1MDM3NTgsImV4cCI6MTY1MjUwNzM1OH0.WtgKIbCb4RdIul-Er3tK1JlbyBBlxObmoPrAV1f9ZDFjbLkVafw9qv9aw8ePrwHGVsWJCYeGc1TnKhyhVRaNPQ
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="value"
+
+[{"name": "drug", "quantity": 2, "price": 20000}]
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="image"; filename="prescription.jpg"
+Content-Type: image/jpg
+
+< ../blood.jpg
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+###
+
+DELETE http://202.191.57.61:5656/api/ecg/623ae490e6d89aaa982ad52c/623af05da8c7c782a6921c4e
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NTA5ODg5MzIsImV4cCI6MTY1MDk5MjUzMn0.ukNAn4EjnJHg-VTcUNxolVuZe63HqZs-neQt9xLRmXU
+
+###
+
+GET http://202.191.57.61:5656/api/prescription/623ae490e6d89aaa982ad52c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NTA5ODg5MzIsImV4cCI6MTY1MDk5MjUzMn0.ukNAn4EjnJHg-VTcUNxolVuZe63HqZs-neQt9xLRmXU
+
+###
+
+DELETE http://202.191.57.61:5656/api/prescription/623ae490e6d89aaa982ad52c/6240ab4376d234b2d2be802b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NTA5ODg5MzIsImV4cCI6MTY1MDk5MjUzMn0.ukNAn4EjnJHg-VTcUNxolVuZe63HqZs-neQt9xLRmXU
+
+###
+
+POST http://202.191.57.61:5656/api/users/upload/623ae490e6d89aaa982ad52c
+Content-Type: multipart/form-data; boundary=----HereGoes
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjNhZTQ5MGU2ZDg5YWFhOTgyYWQ1MmMiLCJpYXQiOjE2NDgwMjY4MTZ9.YlJs2s8uHSRQvSxMDV-DDjSU6EGuqpXJ-ar1BB2BsPQ
+
+------HereGoes
+Content-Disposition: form-data; name="image"; filename="avatar.png"
+Content-Type: image/png
+
+< ../avatar.png
+------HereGoes--
+
+###

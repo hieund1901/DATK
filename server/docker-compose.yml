@@ -1,0 +1,8 @@
+services:
+  authen-server:
+    build: .
+    volumes:
+      - .:/src
+    command: npm start
+    ports:
+      - "3001:3001"

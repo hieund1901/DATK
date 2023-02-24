@@ -1,0 +1,101 @@
+.sidebar{
+    height: 100%;
+}
+
+.user-page{
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+}
+
+.user-page a{
+    text-decoration: none;
+}
+
+.user-page__header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.user-page__header-content{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.user-page__header .plusCircle-icon{
+    vertical-align: baseline;
+}
+
+.user-page__filter {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    padding-bottom: 0px;
+    border-radius: 8px;
+    box-shadow: 10px;
+}
+
+
+.user-page__filter-content{
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:rgb(102, 102, 102);
+    margin: 0;
+}
+
+.user-page__list-filter{
+    margin-top: 10px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.user-page__list-filter .form-item{
+    font-weight: 500;
+}
+
+.user-page__list-filter .button{
+    width: 100px;
+}
+
+.user-page__list-users {
+    margin-top: 30px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px;
+}
+
+.user-name {
+    line-height: 11px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.user-name .avatar-table{
+    width: 30px;
+    height: 30px;
+}
+
+.user-name p{
+    margin: auto 0px;
+}
+
+.user-page__action-text--edit,
+.user-page__action-text--delete{
+    padding-top: 0.2rem;
+}
+
+.user-page__action--edit{
+    color: gray;
+}
+
+.user-page__action--delete{
+    color: red;
+    cursor: pointer;
+}
+
+button {
+    margin-right: 10px;
+}

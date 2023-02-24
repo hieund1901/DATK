@@ -1,0 +1,58 @@
+.userProfile {
+    display: flex;
+    justify-content: space-around;
+  }
+  .userImage {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .userAvatar {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  .userInformation {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+  }
+  .userInformation label{
+    margin: 5px;
+    font-size:small  ;
+  }
+  .userRight h1 {
+    margin: 25px;
+  }
+  .rights {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .checkBoxRight {
+    display: flex;
+    justify-content: space-around;
+  }
+  .buttonUser {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .ant-picker{
+    width: 220px;
+  }
+  .ant-checkbox-group{
+    display: flex;
+    justify-content: space-around;
+  }
+  .buttonUser button{
+    margin: 10px;
+  }
+  .error label {
+    color: red;
+  }
+  .pickClient{
+    display: flex;
+    align-items: center;
+  }
+  

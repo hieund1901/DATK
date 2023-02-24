@@ -1,0 +1,1 @@
+cd ~ && cd vaipesystem/server && npm start

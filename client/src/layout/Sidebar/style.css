@@ -1,0 +1,50 @@
+.sidebar {
+  background: #2cb5c8;
+  height: 100vh;
+}
+
+.logo {
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.main-nav {
+  background-color: #2cb5c8;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: #fff;
+  stroke: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.menu-item:hover {
+  color: #fa8c15;
+  stroke: #fa8c15;
+}
+
+.icon {
+  stroke: inherit;
+  width: 20px;
+  height: 20px;
+}
+
+.ant-menu-item-selected.custom-background {
+  background-color: #63d1df !important; /*Override property*/
+}
+
+.mg-right-sm {
+  margin-right: 20px;
+}
+
+.center-items {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,11 @@
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+#root {
+  /* padding-top: 40px;
+  padding-bottom: 40px; */
+  background-color: #f5f5f5;
+  /* text-align: center; */
+  height: 100%;
+}
